@@ -1,4 +1,5 @@
 import React from 'react'
+// import { Redirect } from 'react-router-dom'
 import CardImage from '../components/CardImage'
 
 class Detalhes extends React.Component {
@@ -18,6 +19,8 @@ class Detalhes extends React.Component {
       // Arrumar uma forma de tornar a redirect_uri dinâmica
       window.location.replace(`https://accounts.spotify.com/authorize?client_id=c2f9f5a873274c43a6eadd0076111423&response_type=token&redirect_uri=http://localhost:3000/callback&state=${this.state.id}`)
     }
+
+    console.log(token)
 
     fetch(`https://api.spotify.com/v1/artists/${this.state.id}`, {
       headers: {
@@ -41,7 +44,7 @@ class Detalhes extends React.Component {
     return (
       <div>
         {this.state.artista.name}
-        <CardImage url={this.state.artista.images.url}></CardImage>
+        <CardImage url={this.state.artista.images[0].url}></CardImage>
       </div>
     )
   }

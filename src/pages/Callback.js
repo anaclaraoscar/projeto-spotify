@@ -16,7 +16,7 @@ class Callback extends React.Component {
     console.log(this.props, parsed)
 
     localStorage.setItem('token', parsed.access_token)
-    localStorage.setItem('expires', new Date())
+    // localStorage.setItem('expires', new Date().getTime(3600))
     // pegar a data atual, adicionar o valor de expires_in (segundos) e transformar em uma string
     this.setState({
       id: parsed.state || null
