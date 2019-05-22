@@ -41,7 +41,7 @@ class Detalhes extends React.Component {
     return (
       <div>
         {this.state.artista.name}
-        <CardImage url={this.state.artista.images[0].url}></CardImage>
+        <CardImage url={this.state.artista.images.url}></CardImage>
       </div>
     )
   }

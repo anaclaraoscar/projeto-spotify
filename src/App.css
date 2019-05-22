@@ -32,7 +32,8 @@ Card {
 }
 
 CardMedia {
-  object-fit: cover;
+  object-fit: none;
+
 }
 
 

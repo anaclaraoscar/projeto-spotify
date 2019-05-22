@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-constructor */
 import PropTypes from 'prop-types'
 import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
@@ -19,16 +20,17 @@ class CardImage extends React.Component {
         <CardActionArea>
           <CardMedia
             component="img"
-            alt="Contemplative Reptile"
+            alt="Artista"
             className={classes && classes.media}
             height="140"
             image={this.props.url}
-            title="Contemplative Reptile"
+            title="Artista"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Lizard
-            </Typography>
+            <Typography
+              gutterBottom variant="h5"
+              component="h2"
+            />
             <Typography component="p">
               Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
               across all continents except Antarctica
