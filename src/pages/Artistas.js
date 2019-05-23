@@ -1,5 +1,7 @@
 import React from 'react'
+// import SimpleList from '../components/List'
 import { Link } from 'react-router-dom'
+import { ListItem } from '@material-ui/core';
 
 class Artistas extends React.Component {
   constructor (props) {
@@ -25,11 +27,11 @@ class Artistas extends React.Component {
       <ul>
         {this.state.artistas.map((item, index) => {
           return (
-            <li key={index}>
+            <ListItem key={index}>
               <Link to={`/detalhes/${item.id}`}>
                 {item.name}
               </Link>
-            </li>)
+            </ListItem>)
         })}
       </ul>
     )
