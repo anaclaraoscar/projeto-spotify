@@ -29,20 +29,33 @@ h1 {
 
 .list {
   justify-content: center;
-  margin-top: 150px;
+  align-content: space-between;
+  padding-top: 30cm;
 }
 
 .itemText {
   color: black;
 }
 
-Card {
-  max-width: 345;
+.MuiCardMedia-media-57 {
+  margin-left: 150px;
+  image-rendering: optimizeQuality;
+
 }
 
-CardMedia {
-  object-fit: none;
+#artistImage {
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  flex: auto;
+  justify-content: center;
+  margin-top: 50px;
+}
 
+.titleArtist {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: space-around;
 }
 
 

@@ -4,7 +4,6 @@ import Card from '@material-ui/core/Card'
 import CardActionArea from '@material-ui/core/CardActionArea'
 import CardContent from '@material-ui/core/CardContent'
 import CardMedia from '@material-ui/core/CardMedia'
-import Typography from '@material-ui/core/Typography'
 import React from 'react'
 
 class CardImage extends React.Component {
@@ -17,20 +16,18 @@ class CardImage extends React.Component {
       <Card className={classes && classes.card}>
         <CardActionArea>
           <CardMedia
+            id="artistImage"
             component="img"
             alt="Artista"
             className={classes && classes.media}
-            height="140"
+            maxHeight="100"
+            maxWidth="120"
+            width="auto"
+            height="auto"
             image={this.props.url}
             title="Artista"
           />
           <CardContent>
-            <Typography
-              gutterBottom variant="h5"
-              component="h2"
-            />
-            <Typography component="p">
-            </Typography>
           </CardContent>
         </CardActionArea>
       </Card>

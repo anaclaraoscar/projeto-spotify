@@ -41,8 +41,12 @@ class Detalhes extends React.Component {
       return null
     }
     return (
-      <div>
-        {this.state.artista.name}
+      <div justifyContent="center"
+        marginBottom="30"
+        className="titleArtist">
+        <h1>
+          &nbsp;&nbsp;&nbsp;&nbsp;{this.state.artista.name}
+        </h1>
         <CardImage url={this.state.artista.images[0].url}></CardImage>
       </div>
     )

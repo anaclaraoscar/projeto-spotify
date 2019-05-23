@@ -1,7 +1,7 @@
 import React from 'react'
 // import SimpleList from '../components/List'
 import { Link } from 'react-router-dom'
-import { ListItem } from '@material-ui/core';
+import { ListItem } from '@material-ui/core'
 
 class Artistas extends React.Component {
   constructor (props) {
