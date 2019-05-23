@@ -4,12 +4,12 @@
 
 .App-header {
   background-color: #007500;
-  min-height: 30vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: x-large;
   color: white;
 }
 
@@ -19,7 +19,7 @@
 
 h1 {
   font-family: sans-serif;
-  color: white;
+  color: black;
 }
 
 .Artist-list {
@@ -27,12 +27,35 @@ h1 {
 
 }
 
-Card {
-  max-width: 345;
+.list {
+  justify-content: center;
+  align-content: space-between;
+  padding-top: 30cm;
 }
 
-CardMedia {
-  object-fit: cover;
+.itemText {
+  color: black;
+}
+
+.MuiCardMedia-media-57 {
+  margin-left: 150px;
+  image-rendering: optimizeQuality;
+
+}
+
+#artistImage {
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  flex: auto;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.titleArtist {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: space-around;
 }
 
 
